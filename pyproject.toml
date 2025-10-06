@@ -1,0 +1,28 @@
+[project]
+name = "monet"
+version = "0.1.0"
+dependencies = [
+  "ipython",
+  "ipykernel",
+  "ipywidgets",
+  "pandas",
+  "matplotlib",
+  "seaborn",
+  "torch",
+  "torchvision",
+  "torchsummary",
+  "tqdm",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cpu" },
+]
+torchvision = [
+  { index = "pytorch-cpu" },
+]
